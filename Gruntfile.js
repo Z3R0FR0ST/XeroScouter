@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     less: {
       development: {
         options: {
-          paths: ["build/public/css"]
+          paths: ['build/public/css']
         },
         files: {
 
@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       },
       production: {
         options: {
-          paths: ["build/public/css"],
+          paths: ['build/public/css'],
           cleancss: true
         },
         files: {

@@ -3,4 +3,42 @@ html
     include header.jade
     body
         include navbar.jade
-        include footer.jade
+        div(class="container")
+            div(class='row')
+                div(class='col-xs-offset-5 col-sm-offset-5 col-md-offset-5 col-lg-offset-6')
+                    h2 Top Teams
+            div(id='teamCarousel', class='carousel slide', data-ride='carousel')
+                ol(class='carousel-indicators')
+                    li(data-target='#teamCarousel', data-slide-to='0' class='active')
+                    li(data-target='#teamCarousel', data-slide-to='1')
+                    li(data-target='#teamCarousel', data-slide-to='2')
+                    li(data-target='#teamCarousel', data-slide-to='3')
+                    li(data-target='#teamCarousel', data-slide-to='4')
+                  div(class='carousel-inner' role='listbox', style='max-height: 45% !important; max-width: 100% !important; text-color: black;')
+                      div(class='item active')
+                          div(class='carousel-caption')
+                              h1 Who Knows?
+                          img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
+                      div(class='item')
+                          div(class='carousel-caption')
+                              h1 Who Knows?
+                          img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
+                      div(class='item')
+                          div(class='carousel-caption')
+                              h1 Who Knows?
+                          img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
+                      div(class='item')
+                          div(class='carousel-caption')
+                              h1 Who Knows?
+                          img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
+                      div(class='item')
+                          div(class='carousel-caption')
+                              h1 Who Knows?
+                          img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
+                  a(class="left carousel-control", href="#teamCarousel", role="button", data-slide="prev")
+                      span(class="glyphicon glyphicon-chevron-left", arai-hidden="true")
+                      span(class="sr-only") Previous
+                  a(class="right carousel-control", href="#teamCarousel", role="button", data-slide="next")    
+                      span(class="glyphicon glyphicon-chevron-right", arai-hidden="true")
+                      span(class="sr-only") Next
+          include footer.jade

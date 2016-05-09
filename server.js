@@ -5,11 +5,21 @@ var methodOverride      = require('method-override');
 var bodyParser          = require('body-parser');
 var morgan              = require('morgan');
 var jade                = require('jade');
-//var angular             = require('angular');
 var jQuery              = require('jquery');
+var mysql               = require('mysql');
+
+// Temporarily disabled, prepending a full routing
+//var angular             = require('angular');
 
 // Database setup
-var db = mongoose.connect(require('./config/db').url);
+// Only temporary, whilst I fix db.js
+var mongodb = mongoose.connect('mongodb://mongo:deathcode@127.0.0.1:27017/XeroScouter');
+var mysql   = mysql.createConnection({
+    host          : 'localhost',
+    user          : 'XeroScouter',
+    password      : 'errorcodexero',
+    database      : 'firstteamscouter'
+  });
 
 // Select port for web interface - 8080
 var port = process.env.PORT || 8080;
