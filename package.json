@@ -1,0 +1,27 @@
+{
+  "name": "XeroScouter",
+  "version": "0.0.0",
+  "private": true,
+  "description": "FRC Team Error Code Xero Web-Based Scouting Interface",
+  "license": "UNLICENSE",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "animate.css": "^3.5.1",
+    "body-parser": "^1.15.1",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "grunt": "^1.0.1",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-typescript": "^0.8.0",
+    "jade": "^1.11.0",
+    "jquery": "^2.2.3",
+    "less": "^2.7.0",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.4.15",
+    "morgan": "^1.7.0"
+  }
+}
