@@ -5,6 +5,7 @@ FRC Team 1425 Scouting Web Interface
 
 Installation is straightforward
 > sudo apt-get install nodejs nodejs-legacy
+
 > sudo npm install -g grunt-cli
 
 > npm install
