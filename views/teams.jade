@@ -1,44 +1,44 @@
 doctype html
 html
-    include header.jade
-    body
-        include navbar.jade
-        div(class="container")
-            div(class='row')
-                div(class='col-xs-offset-5 col-sm-offset-5 col-md-offset-5 col-lg-offset-6')
-                    h2 Top Teams
-            div(id='teamCarousel', class='carousel slide', data-ride='carousel')
-                ol(class='carousel-indicators')
-                    li(data-target='#teamCarousel', data-slide-to='0' class='active')
-                    li(data-target='#teamCarousel', data-slide-to='1')
-                    li(data-target='#teamCarousel', data-slide-to='2')
-                    li(data-target='#teamCarousel', data-slide-to='3')
-                    li(data-target='#teamCarousel', data-slide-to='4')
-                  div(class='carousel-inner' role='listbox', style='max-height: 45% !important; max-width: 100% !important; text-color: black;')
-                      div(class='item active')
-                          div(class='carousel-caption')
-                              h1 Who Knows?
-                          img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
-                      div(class='item')
-                          div(class='carousel-caption')
-                              h1 Who Knows?
-                          img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
-                      div(class='item')
-                          div(class='carousel-caption')
-                              h1 Who Knows?
-                          img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
-                      div(class='item')
-                          div(class='carousel-caption')
-                              h1 Who Knows?
-                          img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
-                      div(class='item')
-                          div(class='carousel-caption')
-                              h1 Who Knows?
-                          img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
-                  a(class="left carousel-control", href="#teamCarousel", role="button", data-slide="prev")
-                      span(class="glyphicon glyphicon-chevron-left", arai-hidden="true")
-                      span(class="sr-only") Previous
-                  a(class="right carousel-control", href="#teamCarousel", role="button", data-slide="next")    
-                      span(class="glyphicon glyphicon-chevron-right", arai-hidden="true")
-                      span(class="sr-only") Next
-          include footer.jade
+	include header.jade
+	body
+		include navbar.jade
+		.container
+			.row
+				.col-xs-offset-5.col-sm-offset-5.col-md-offset-5.col-lg-offset-6
+					h2 Top Teams
+			#teamCarousel.carousel.slide(data-ride='carousel')
+				ol.carousel-indicators
+					li(data-target='#teamCarousel', data-slide-to='0', class='active')
+					li(data-target='#teamCarousel', data-slide-to='1')
+					li(data-target='#teamCarousel', data-slide-to='2')
+					li(data-target='#teamCarousel', data-slide-to='3')
+					li(data-target='#teamCarousel', data-slide-to='4')
+				div.carousel-inner(role='listbox', style='max-height: 45% !important; max-width: 100% !important; text-color: black;')
+					#slide1.item.active
+						#slide1-caption.carousel-caption
+							h1 Who Knows?
+						img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
+					#slide2.item
+						#slide2-caption.carousel-caption
+							h1 Who Knows?
+						img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
+					#slide3.item
+						#slide3-caption.carousel-caption
+							h1 Who Knows?
+						img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
+					#slide4.item
+						#slide4-caption.carousel-caption
+							h1 Who Knows?
+						img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
+					#slide5.item
+						#slide5-caption.carousel-caption
+							h1 Who Knows?
+						img(src='img/Question-mark.png', style='height: 50% !important; width: 50% !important;')
+				a.left.carousel-control(href='#teamCarousel', role='button', data-slide='prev')
+					span.glyphicon.glyphicon-chevron-left(arai-hidden='true')
+					span.sr-only Previous
+				a.right.carousel-control(href='#teamCarousel', role='button', data-slide='next')
+					span.glyphicon.glyphicon-chevron-right(arai-hidden='true')
+					span.sr-only Next
+			include footer.jade

@@ -49,6 +49,7 @@ app.use('/libs', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
 app.use('/libs', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/css', express.static(__dirname + '/node_modules/animate.css/'));
+app.use('/css', express.static(__dirname + '/node_modules/normalize.css/'));
 
 // Makes access easier
 app.use('/css', express.static(__dirname + '/public/css'));
